@@ -52,7 +52,7 @@ namespace Inheritance
                 NumberOfEyes = 2,
                 IsMale = true,
             };
-            animal.DisplayCharacteristics(animal);
+            animal.DisplayCharacteristics();
         }
     }
 }

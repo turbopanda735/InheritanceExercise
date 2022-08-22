@@ -15,19 +15,7 @@ namespace Inheritance
         public string Noise { get; set; }
         public void DisplayCharacteristics(Bird bird)
         {
-            string maleMessage;
-            string maleMessage2;
-            if (IsMale == true)
-            {
-                maleMessage = "yes";
-                maleMessage2 = "is";
-            }
-            else
-            {
-                maleMessage = "no";
-                maleMessage2 = "is not";
-            }
-            Console.WriteLine($"this animal is called {Name}. They are {Age} years old and they have {NumberOfEyes} eyes. {maleMessage}, this animal {maleMessage2} a male.");
+            DisplayCharacteristics();
             string fly;
             if (CanFly == true)
                 fly = "can";

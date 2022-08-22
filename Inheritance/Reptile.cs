@@ -15,20 +15,7 @@ namespace Inheritance
         public string NoiseYouMakeWhenYouSeeIt { get; set; }
         public void DisplayCharacteristics(Reptile reptile)
         {
-
-            string maleMessage;
-            string maleMessage2;
-            if (IsMale == true)
-            {
-                maleMessage = "yes";
-                maleMessage2 = "is";
-            }
-            else
-            {
-                maleMessage = "no";
-                maleMessage2 = "is not";
-            }
-            Console.WriteLine($"this animal is called {Name}. They are {Age} years old and they have {NumberOfEyes} eyes. {maleMessage}, this animal {maleMessage2} a male.");
+            DisplayCharacteristics();
             string scaly;
             if (IsScaly == true)
                 scaly = "it is";
@@ -37,7 +24,7 @@ namespace Inheritance
             if (NeedsHeatLamp == true)
                 heat = "loves";
             else heat = "hates";
-            Console.WriteLine($"this REPTILE has {NumberOfLegs} legs. It {scaly} fly. {scaly} scaly. It {heat} heat lamps. when you see it you go '{NoiseYouMakeWhenYouSeeIt}!'");
+            Console.WriteLine($"this REPTILE has {NumberOfLegs} legs. {scaly} scaly. It {heat} heat lamps. when you see it you go '{NoiseYouMakeWhenYouSeeIt}!'");
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Inheritance
         public int Age { get; set; }
         public int NumberOfEyes { get; set; }
         public bool IsMale { get; set; }
-        public void DisplayCharacteristics(Animal animal)
+        public void DisplayCharacteristics()
         {
             string maleMessage;
             string maleMessage2;
